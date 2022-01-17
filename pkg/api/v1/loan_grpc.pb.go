@@ -21,7 +21,7 @@ type LoanServiceClient interface {
 	// StartLocalEngine starts a Loan Engine on the Bhojpur.NET Platform directly.
 	// The incoming requests are expected in the following order:
 	//   1. metadata
-	//   2. all bytes constituting the swarm/config.yaml
+	//   2. all bytes constituting the loan/config.yaml
 	//   3. all bytes constituting the Engine YAML that will be executed (that the config.yaml points to)
 	//   4. all bytes constituting the gzipped Bhojpur.NET Platform application tar stream
 	//   5. the Bhojpur.NET Platform application tar stream done marker
@@ -201,7 +201,7 @@ type LoanServiceServer interface {
 	// StartLocalEngine starts a Loan Engine on the Bhojpur.NET Platform directly.
 	// The incoming requests are expected in the following order:
 	//   1. metadata
-	//   2. all bytes constituting the swarm/config.yaml
+	//   2. all bytes constituting the loan/config.yaml
 	//   3. all bytes constituting the Engine YAML that will be executed (that the config.yaml points to)
 	//   4. all bytes constituting the gzipped Bhojpur.NET Platform application tar stream
 	//   5. the Bhojpur.NET Platform application tar stream done marker
